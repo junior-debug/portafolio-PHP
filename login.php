@@ -1,9 +1,7 @@
 <?php
 include 'header.php';
 
-//session_start();
-
-if (isset($_POST["user"]) && isset($_POST["password"])) {
+if ($_POST) {
 
     if ($_POST["user"] == "junior" && $_POST["password"] == "123456") {
         $_SESSION["user"] = "junior";
